@@ -1,0 +1,137 @@
+
+.form-field {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.form-field label {
+	margin-bottom: 4px;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: $bodyTextCl;
+}
+
+.form-field input {
+	height: 40px;
+	padding-left: 42px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	color: $bodyTextCl;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover , 
+  &:focus  {
+    outline: $accentCl;
+    border-color: $accentCl;
+    cursor: pointer;
+  }
+}
+
+.form-icon {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  .form-field input:hover + &,
+  .form-field input:focus + & {
+    fill: $accentCl;
+  }
+}
+
+.form-field textarea {
+	resize: none;
+	min-height: 120px;
+	padding: 12px 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	font-family: inherit;
+	color: $bodyTextCl;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+  outline: $accentCl;
+	border-color: $accentCl;
+	cursor: pointer;
+  }
+}
+
+.form-checkbox {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.input-checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.label-checkbox {
+	margin-left: 0;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	color: $bodyTextCl;
+
+
+	@media screen and (min-width:480px) {
+		display: flex;
+		align-items: center;
+	}
+	@media screen and (min-width:1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-left: 13px;
+	}
+}
+
+.icon-checkbox {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 7px;
+	border: 2px solid black;
+  border-radius: 2px;
+  
+  .input-checkbox:checked + & {
+    border-color: $accentCl;
+    background-color: $accentCl;
+    background-image: url("../images/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.agreement-link {
+	margin-left: 4px;
+	color: $accentCl;
+}
+
+.form-btn-send {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 56px;
+	border-radius: 4px;
+	border: transparent;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: $accentCl;
+	color: $white;
+	cursor: pointer;
+}

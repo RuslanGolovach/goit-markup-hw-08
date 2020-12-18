@@ -1,0 +1,23 @@
+.footer-adress {
+	font-style: normal;
+	text-decoration: none;
+	color: $white;
+}
+
+.footer-link {
+	font-style: normal;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list {
+	display: inline-block;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.footer-item:not(:last-child) {
+	margin-bottom: 9px;
+}
